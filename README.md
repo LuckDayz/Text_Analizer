@@ -31,7 +31,14 @@
 
 
 ### Test-Driven Development 
->
->
->
->
+> "It should return 3 if a passage just has 3 words." Code: const text = "Hello hello world"; wordCounter(text); Expected Output: 3
+
+> "It should return 0 for a string that is only spaces." Code: wordCounter(""); Expected Output: 0
+
+>"It should not count number as word." Code wordCounter("hello hello 77 88"); Expected Output: 2
+
+>"It should return 1 occurence of a word when the word and text are the same." Code: const text = "hello hello there"; const word = "hello"; numberOfOccurenceInText(word, text); Expected Output: 1
+
+> "If an empty string is passed in as a word, it should return 0" Code: const text = ""; wordCounter(word, text); Expected Output: 0
+
+> "If a user input an offensive word, it should omit by asteric them" Code: const offensiveWord = ["zoinks", "muppeteer", "biffaroni", "loopdaloop"]; filterOffensiveWords(text); Expected Output: ***** ****** ******* ******
